@@ -1,0 +1,22 @@
+VRAAG 8 - Normalisatie
+
+UNF: niet-genormaliseerde vorm, alle data vervatten in één enkele entiteit, hier database genoemd.
+		DB(staffno - dentistname - patientno - patientname - appointment date - time - 			surgery no)
+		
+1NF: eerste normaalvorm, alle loops die zich herhalen worden in aparte tabellen gezet, dus per set van data wordt er een nieuwe tabel gemaakt en we zoeken onze primary key. Hier is dit de patient number.
+
+		Patient(Patientno - Patientname - Appointment date - appointment time - surgery 			number)
+		Staff(Staffno - dentistname)
+		
+2NF: tweede normaalvorm, alle elementen die geen sleutel zijn, moeten volledig afhankelijk zijn van een sleutel. Hier zijn foreign keys staffno en appointment time afhankelijk van primary key patientno.
+
+		Patient(Patientno - Patientname - Appointment date - appointment time - staff no)
+		Staff(staffno - dentistname)
+		Surgery(appointment time - surgery number)
+		
+3NF: derde normaalvorm, alle attributen die niet afhankelijk zijn van een sleutel, mogen ook niet afhankelijk zijn van iets die ook niet afhankelijk is van een sleutel.
+
+		Patient(Patientno - Patientname - Appointment date - staff no)
+		Staff(staffno - dentistname)
+		Surgery(appointment date - appointment time - surgery number)
+

@@ -1,0 +1,9 @@
+Vraag 12 - Ensembl
+
+Stap 1: informatie opzoeken in ensembl
+http://www.ensembl.org/Mus_musculus/Gene/Summary?db=core;g=ENSMUSG00000026923;r=2:26457903-26516663
+
+Stap 2: via de URL informatie opzoeken in REST API:
+http://rest.ensembl.org/sequende/id/ENSMUSG00000026923
+
+Maar dit werkt niet

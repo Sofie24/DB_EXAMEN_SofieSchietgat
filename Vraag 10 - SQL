@@ -1,0 +1,10 @@
+Vraag 10 - SQL
+
+Query1: SELECT gene_id, seq_region_start, seq_region_end, (seq_region_end - 				seq_region_start + 1), description FROM bioinf_examen.gene ORDER BY (seq_region_end - seq_region_start + 1) LIMIT 1;
+
+Antwoord1: T cell receptor delta diversity 1 [Source:HGNC Symbol;Acc:12254]
+
+
+Query2: SELECT rank, description FROM bioinb_examen.transcript ORDER BY rank LIMIT 1 OFFSET 1;
+
+Antwoord2:

@@ -1,0 +1,9 @@
+Vraag 11 - Mongo
+
+Query1: db.bioinf_mongo_examen.find( { percentage_of_side_effects: { $gt: 12 } } )
+
+Antwoord 1:
+
+Query2: db.bioinf_mongo_examen.find (company).sort( { percentage_of_side_effects: { $avg: 10 } } ) DESC
+
+Antwoord 2:
